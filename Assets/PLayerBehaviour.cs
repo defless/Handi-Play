@@ -11,6 +11,8 @@ public class PLayerBehaviour : MonoBehaviour
 
 	public Vector2 m_finishLine;
 	public bool mustMove=false;
+	
+	AudioSource audioData;
 
 
 	
@@ -27,6 +29,8 @@ public class PLayerBehaviour : MonoBehaviour
 		if (Input.GetMouseButtonDown(0) || Input.GetKeyDown(KeyCode.Space))
     	{
 			m_rb2D.MovePosition(m_rb2D.position + Time.fixedDeltaTime * m_jump * Vector2.up);
+			audioData = GetComponent<AudioSource>();
+        	audioData.Play(0);
 		} 
 		else {
 			m_rb2D.MovePosition(m_rb2D.position + Time.fixedDeltaTime * m_jump/m_gravity * Vector2.down);

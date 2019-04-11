@@ -10,6 +10,8 @@ public class pipesbehaviour : MonoBehaviour
 	public float offset=1000f;
 	bool isCreated =false;
 
+	AudioSource audioData;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -34,6 +36,15 @@ public class pipesbehaviour : MonoBehaviour
     {
     	if(col.gameObject.name=="Player")
     	{
-    		Application.LoadLevel(Application.loadedLevel);
-    }	}
+    		audioData = GetComponent<AudioSource>();
+        	audioData.Play(0);
+    		Invoke("restart",1);
+    		
+    	}
+    }
+    void restart()
+    {
+    	Application.LoadLevel(Application.loadedLevel);
+    }	
+	
 }
