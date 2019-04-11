@@ -54,7 +54,9 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\CalculatorManager.cs" />
+     <Compile Include="Assets\Camera.cs" />
      <Compile Include="Assets\firstscript.cs" />
+     <Compile Include="Assets\pipesbehaviour.cs" />
      <Compile Include="Assets\PLayerBehaviour.cs" />
  <Reference Include="Unity.TextMeshPro.Editor">
  <HintPath>/Users/defless/HANDI/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
