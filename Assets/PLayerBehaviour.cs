@@ -29,7 +29,8 @@ public class PLayerBehaviour : MonoBehaviour
     {
 		if (Input.GetMouseButtonDown(0) || Input.GetKeyDown(KeyCode.Space))
     	{
-			m_rb2D.MovePosition(m_rb2D.position + Time.fixedDeltaTime * m_jump * Vector2.up);
+			//m_rb2D.MovePosition(m_rb2D.position + Time.fixedDeltaTime * m_jump * Vector2.up);
+			transform.position = new Vector3 (transform.position.x, m_rb2D.transform.position.y + 100, transform.position.z);
 			audioData = GetComponent<AudioSource>();
         	audioData.Play(0);
 		} 
