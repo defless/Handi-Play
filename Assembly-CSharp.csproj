@@ -57,6 +57,7 @@
      <Compile Include="Assets\Camera.cs" />
      <Compile Include="Assets\Deadzonefloor.cs" />
      <Compile Include="Assets\firstscript.cs" />
+     <Compile Include="Assets\holedetection.cs" />
      <Compile Include="Assets\pipesbehaviour.cs" />
      <Compile Include="Assets\PLayerBehaviour.cs" />
      <None Include="Assets\sprite\spritesheet\spritesheet.txt" />

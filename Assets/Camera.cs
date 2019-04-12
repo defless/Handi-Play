@@ -11,8 +11,12 @@ public class Camera : MonoBehaviour
     public float m_offset=1000f;
     GameObject new_pipe_up;
     GameObject new_pipe_down;
+    GameObject new_hole_detection;
+    GameObject new_Background_1;
     public GameObject pipe_up_ref;
     public GameObject pipe_down_ref;
+    public GameObject hole_detection_ref;
+    public GameObject Background_1_ref;
 
 
     // Start is called before the first frame update
@@ -38,8 +42,13 @@ public class Camera : MonoBehaviour
 
             new_pipe_up = Instantiate(pipe_up_ref, new Vector3(pipe_up_ref.transform.position.x + m_offset, 400 + n , 5), pipe_up_ref.transform.rotation);
             new_pipe_down = Instantiate(pipe_down_ref, new Vector3(pipe_down_ref.transform.position.x + m_offset, -400 + n , 5), pipe_down_ref.transform.rotation);
+            new_hole_detection = Instantiate(hole_detection_ref, new Vector3(hole_detection_ref.transform.position.x + m_offset,  n , 0), hole_detection_ref.transform.rotation);
+            new_Background_1 = Instantiate(Background_1_ref, new Vector3(Background_1_ref.transform.position.x + 1350,  0 , 0), Background_1_ref.transform.rotation);
             pipe_up_ref=new_pipe_up;
             pipe_down_ref=new_pipe_down;
+            hole_detection_ref = new_hole_detection;
+            Background_1_ref = new_Background_1;
+
             
         }
     }
