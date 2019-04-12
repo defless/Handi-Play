@@ -1,12 +1,8 @@
 <h1> Bone Dash</h1>
 
-<h2>Description</h2>
+<h2>Descrption</h2>
+<p></p>
 
-<h2>Instructions</h2>
-<h3> Pour la première récupération </h3>
-<ol>
+<h2>To Do</h2>
+<p> Make the skull moving up/down and increase the speed of movement by the number of points </p>
 
-<li> $ git set </li>
-</ol>
-<h3> Pour "push" </h3>
-<h3> Pour Pull </h3>
